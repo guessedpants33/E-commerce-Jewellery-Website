@@ -16,13 +16,13 @@ const Navbar = () => {
                 <p>SHOPPER</p>
             </div>
             <ul className="nav-menu">
-                <li onClick={()=>{setMenu("shop")}}>Shop{menu==="shop"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("men")}}>Men{menu==="men"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("women")}}>Women{menu==="women"?<hr/>:<></>}</li>               
+                <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("men")}}><Link to='/men'>Men</Link>{menu==="men"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("women")}}><Link to='/women'>Women</Link>{menu==="women"?<hr/>:<></>}</li>               
             </ul>
             <div className="Cart">
-                <button>Login</button>
-                <img src={carticon} className="cartimg" alt="Cart" />
+                <Link to='/login'><button>Login</button></Link>
+                <Link to='/cart'><img src={carticon} className="cartimg" alt="Cart" /></Link>
                 <div className="CartCounter">0</div>                
             </div>           
         </div>
