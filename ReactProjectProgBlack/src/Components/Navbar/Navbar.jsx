@@ -4,10 +4,11 @@ import './Navbar.css'
 
 import logo from '../assets/logo.png'
 import carticon from '../assets/download.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-        const [menu, setMenu] = useState("shop");
+        const [menu, setMenu] = useState("Shop");
 
     return(
         <div className="navbar">
@@ -16,7 +17,7 @@ const Navbar = () => {
                 <p>SHOPPER</p>
             </div>
             <ul className="nav-menu">
-                <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("Shop")}}><Link to='/'>Shop</Link>{menu==="Shop"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("men")}}><Link to='/men'>Men</Link>{menu==="men"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("women")}}><Link to='/women'>Women</Link>{menu==="women"?<hr/>:<></>}</li>               
             </ul>
