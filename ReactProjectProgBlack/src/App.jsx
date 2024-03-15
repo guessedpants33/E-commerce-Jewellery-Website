@@ -6,7 +6,7 @@ import LoginSignup from './Pages/LoginSignup';
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Cart from './Pages/Cart';
-import { Link } from 'react-router-dom';
+
 
 function App() {
   return (
