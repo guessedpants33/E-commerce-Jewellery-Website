@@ -18,5 +18,13 @@ item p{
 }
 
 .item-price-old{
-    color: #8c;
+    color: #8c8c8c;
+    font-size: 18x;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
 }
