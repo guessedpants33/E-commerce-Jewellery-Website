@@ -1,7 +1,7 @@
-import React from 'react'
-import './Item.css'
+import React from 'react';
+import './item.css';
 
-const Item = () => {
+const Item = (props) => { // <-- Props should be passed as an argument
     return(
         <div className='item'>
             <img src={props.image} alt='' />
@@ -12,9 +12,8 @@ const Item = () => {
             <div className='item-price-old'>
                 {props.old_price}
             </div>
-
         </div>
-    )
+    );
 }
 
-export default Item
+export default Item;
