@@ -1,5 +1,3 @@
-# Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+Hello!
+This project has been set up to construct a website frontend (and a future possible backend) for an e-commerce website dealing in jewellery.
+Please feel free to contribute!!!
